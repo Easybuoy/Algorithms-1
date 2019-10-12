@@ -12,11 +12,9 @@ def recipe_batches(recipe, ingredients):
         if ingredients[ingredient] < recipe[ingredient]:
             return 0
         else:
-            # ingredients[ingredient] -= recipe[ingredient]
             placeholder = ingredients[ingredient] // recipe[ingredient]
             batches.append(placeholder)
 
-    # print(min(batches))
     return min(batches)
 
 
